@@ -1,0 +1,197 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #B8C2C9;
+}
+
+body {
+  background-image: linear-gradient(to left, #4B6F52, #F8F8F8);
+}
+/* selection */
+.alert{
+  display: none;
+}
+.alert p{
+  color: white;
+}
+::selection {
+  background: #c4c9c5;   
+  color:black;          
+}
+/* Headings */
+h1 {
+  color: white;
+}
+
+/* Layout */
+.parent {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Left Image */
+.ground {
+  width: 50%;
+  height: 100vh;
+}
+
+.ground img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Right Section */
+.login {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Container */
+.child-login {
+  width: 50%;
+}
+
+/* Title */
+.login .title {
+  margin: 20px 0;
+}
+
+.login .title p {
+  margin: 10px 0;
+  color: #B8C2C9;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 20px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+/* Remember (checkbox section) */
+.remember {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.remember .left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  accent-color: #2F2F2F;
+}
+
+/* Button */
+.login button {
+  background-color: #2F2F2F;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+    transition: 150ms ease;
+
+}
+
+.login button:hover {
+  background-color: rgb(181, 255, 181);
+  color: black;
+}
+
+/* Have an account */
+.have-account {
+  margin-top: 10px;
+}
+
+.have-account a {
+  color: #2F2F2F;
+  text-decoration: none;
+}
+
+.have-account a:hover {
+  color: white;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* media */
+@media (max-width:1100px) {
+  .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ground {
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ground img {
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    display: block;
+  }
+
+  .login {
+    width: 100%;
+    padding: 20px;
+    transform: translateY(-30px);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .login .child-login {
+    width: 90%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: transparent;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  .login button {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .login button {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+
+
+}

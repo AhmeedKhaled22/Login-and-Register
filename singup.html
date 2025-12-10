@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style/singIn.css" />
+  </head>
+
+  <body>
+    <div class="parent">
+      <!-- Left Image -->
+      <div class="ground">
+        <img src="./img/Rectangle 1.png" alt="background" />
+      </div>
+
+      <!-- Sign In Form -->
+      <div class="login">
+        <div class="child-login">
+          <!-- Title Section -->
+          <div class="title">
+            <h1>Sign In</h1>
+            <p>Create your account in seconds</p>
+          </div>
+          <div id="loginForm">
+            <input
+              type="text"
+              required
+              placeholder="First Name :"
+              id="first-Name"
+            />
+            <div class="alert" id="firstNameAlert">
+              <p>First Latter Capital</p>
+            </div>
+            <input
+              type="text"
+              required
+              placeholder="Last Name :"
+              id="last-name"
+            />
+            <div class="alert" id="lastNameAlert">
+              <p>First Latter Capital</p>
+            </div>
+            <input
+              required
+              type="email"
+              placeholder="Email Address :"
+              id="email"
+              required
+            />
+            <div class="alert" id="emailAlert">
+              <p>aa@.com</p>
+            </div>
+            <input
+              required
+              type="password"
+              placeholder="Create password :"
+              id="password"
+            />
+            <div class="alert" id="passwrdAlert">
+              <p>number or latter 8 => 14 latter</p>
+            </div>
+            <!-- Agree Terms -->
+            <div class="remember">
+              <div class="left">
+                <input type="checkbox" id="agree" />
+                <label for="agree"
+                  >I agree to the terms and privacy policy</label
+                >
+              </div>
+            </div>
+            <!-- Button -->
+            <button type="button" onclick="addData()" id="create" disabled>
+              Create an account
+            </button>
+            <p class="have-account">
+              Already a member ?
+              <a href="index.html">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

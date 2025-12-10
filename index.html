@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="ground">
+        <img src="./img/Rectangle 1.png" alt="background" />
+      </div>
+
+      <div class="login">
+        <div class="child-login">
+          <!-- Title -->
+          <div class="title">
+            <h1>Login</h1>
+            <p>Login to your account</p>
+          </div>
+
+          <!-- Inputs -->
+          <input type="email" placeholder="Email Address" id="email" required />
+          <input type="password" placeholder="Password" id="password" />
+
+          <!-- Remember & Forget -->
+          <div class="remember">
+            <input type="checkbox" id="keep-logged-in" />
+            <label for="keep-logged-in">Keep me log in</label>
+            <a href="#" class="forget-password">Forgot password?</a>
+          </div>
+
+          <!-- Login Button -->
+          <button type="submit" id="login">Log In</button>
+          <!-- Sign up -->
+          <p class="sign-up">
+            Don't have an account? <a href="singup.html">Sign up</a>
+          </p>
+
+          <!-- Divider with text -->
+          <div class="line-with-text">
+            <span class="line"></span>
+            <span class="text">Or continue with</span>
+            <span class="line"></span>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#"
+              ><img src="./img/Screenshot 2025-12-01 204442.png" alt="Facebook"
+            /></a>
+            <a href="#"><img src="./img/images.png" alt="Google" /></a>
+            <a href="#"
+              ><img
+                src="./img/1690643591twitter-x-logo-png.webp.png"
+                alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="./img/Screenshot 2025-12-01 203438.png" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/login.js"></script>
+  </body>
+</html>
