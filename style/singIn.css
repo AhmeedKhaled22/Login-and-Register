@@ -38,7 +38,9 @@ h1 {
   width: 50%;
   height: 100vh;
 }
-
+input{
+  margin-bottom:20px
+}
 .ground img {
   width: 100%;
   height: 100vh;
@@ -195,3 +197,4 @@ a {
 
 
 }
+
