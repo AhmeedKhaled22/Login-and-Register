@@ -39,7 +39,7 @@ h1 {
   height: 100vh;
 }
 input{
-  margin-bottom:20px
+  margin-bottom:20px !important; 
 }
 .ground img {
   width: 100%;
@@ -197,4 +197,5 @@ a {
 
 
 }
+
 
