@@ -22,7 +22,9 @@ body {
 h1 {
   color: white;
 }
-
+input{
+  margin-bottom:20px
+}
 /* Parent Container */
 .parent {
   display: flex;
@@ -244,3 +246,4 @@ a:hover {
 
 
 }
+
