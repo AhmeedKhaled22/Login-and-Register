@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
   font-weight: bold;
-  color: #B8C2C9;
+  color: white;
 }
 
 body {
@@ -46,7 +46,6 @@ input{
   height: 100vh;
   object-fit: cover;
   display: block;
-  border-radius: 0 20px 20px 0;
 }
 
 /* Right Section */
@@ -197,5 +196,6 @@ a {
 
 
 }
+
 
 
